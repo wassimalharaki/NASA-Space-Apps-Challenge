@@ -1,32 +1,26 @@
-/* img{
-    position: absolute;
-} */
 body{
     background: #d49e99;
     margin: 0;
     padding: 0;
     overflow: scroll;
-  
-
 }
+
 img{
     position: absolute;
 }
-
 
 .scroll_container{
  min-width: 1px;
   z-index: 0;
   height: 75280px;
   width: 100%;
-  transform-origin: 0px 0px;
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  transform-origin: 0 0;
+  position: fixed;
+  top: 0;
 }
 .sky_container{
-    height: 250px; 
-  
+    height: 210px;
+  margin-top: 70px;
 }
 .sky-inner{
   width: 1000px;
@@ -35,8 +29,6 @@ img{
   position: relative;
   min-height: 200px;
   overflow: hidden;
- 
-
 }
 
 .floor-inner{
@@ -49,11 +41,8 @@ img{
 .scene{
     width: 100%;
     height: 100%;
-    position: fixed; 
-  
-
+    position: fixed;
 }
-
 
 .scrollMessage{
 position: absolute;
@@ -70,7 +59,6 @@ p .scrollMessage{
 .bedroom_container{
     height: 100%;
 }
-
 
 .scroll-down{
     position: absolute;
@@ -148,7 +136,7 @@ p .scrollMessage{
     top:30%;
   }
   .inner-wall .clock-hand{
-    right:0%;
+    right:0;
     top:30%;
   }
   .inner-wall .bathroom-light{
@@ -221,7 +209,7 @@ p .scrollMessage{
 }
 .lamp{
   right: 10%;
-  bottom:0%;
+  bottom:0;
 }
 .rug{
   bottom:-22%;
@@ -360,8 +348,7 @@ p .scrollMessage{
 }
 
 .space-color{
-  background: #354250;
-  background-image: url(../img/stars-blurred.png);
+  background: #354250 url(../img/stars-blurred.png);
 }
 .spacesuit{
 animation-name:  spaceman-move;
@@ -401,7 +388,7 @@ img.alien {
 .planet{
  animation-name:  planet-move;
 animation-duration: 2.5s;
-animation-delay: 0;
+animation-delay: unset;
 animation-iteration-count: infinite;
 animation-direction: alternate;
 animation-timing-function: ease-in-out;
@@ -481,4 +468,44 @@ img.small-tree {
   }
 }
 
+nav {
+  background-color: #008a97;
+  color: azure;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  top: 0;
+  z-index: 1000;
+}
 
+.container {
+  max-width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  border-bottom: 4px solid azure;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: azure;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #8cf3f0;
+}
