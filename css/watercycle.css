@@ -3,6 +3,7 @@ body{
     margin: 0;
     padding: 0;
     overflow: scroll;
+    overflow-x: hidden;
 }
 
 img{
@@ -486,7 +487,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  border-bottom: 4px solid azure;
 }
 
 ul {
