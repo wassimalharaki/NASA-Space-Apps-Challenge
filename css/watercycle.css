@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
 body{
     background: #d49e99;
     margin: 0;
@@ -20,8 +28,8 @@ img{
   top: 0;
 }
 .sky_container{
-    height: 210px;
-  margin-top: 70px;
+    height: 250px;
+    margin-top: 70px;
 }
 .sky-inner{
   width: 1000px;
@@ -470,7 +478,7 @@ img.small-tree {
 }
 
 nav {
-  background-color: #008a97;
+  background-color: rgb(53, 134, 255, 0.9);
   color: azure;
   position: fixed;
   width: 100%;
@@ -481,12 +489,18 @@ nav {
 
 .container {
   max-width: 100%;
-  padding: 10px 20px;
+  padding: 0 20px;
   display: flex;
   height: 70px;
   justify-content: space-between;
   align-items: center;
   position: fixed;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 ul {
