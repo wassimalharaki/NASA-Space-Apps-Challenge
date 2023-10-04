@@ -196,3 +196,7 @@ a:hover {
 		opacity: 1;
 	}
 }
+
+#selected {
+    color: #8cf3f0
+}
