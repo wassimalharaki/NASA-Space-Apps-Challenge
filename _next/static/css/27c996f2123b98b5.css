@@ -369,9 +369,9 @@
     }
 }
 .EarthDot_outer__27soS{
-    height:800vh;
+    height:500vh;
     z-index:2;
-    overflow:hidden
+    overflow:hidden;
 }
 .EarthDot_inner__2Uge5{
     height:100vh
@@ -503,9 +503,6 @@
     transform:scale(0)
 }
 @media (max-width:500px){
-    .EarthDot_outer__27soS{
-        margin-top:-320px
-    }
     .EarthDot_bg__kfbEH{
         top:50%;
         height:240px
@@ -517,7 +514,6 @@
     }
     .EarthDot_outer__27soS{
         overflow:visible;
-        overflow:initial
     }
     .EarthDot_inner__2Uge5{
         width:100%;
@@ -780,7 +776,7 @@
     right:12.5%
 }
 .RainDrop_container__1wFPD .RainDrop_inner__2in_F .RainDrop_content__21YKl.RainDrop_content2__eKDtn{
-    top:25%;
+    top:55%;
     left:auto;
     right:12.5%
 }
@@ -914,7 +910,7 @@
         transform:translateY(10px)
     }
     .RainDrop_container__1wFPD .RainDrop_inner__2in_F .RainDrop_content__21YKl.RainDrop_content2__eKDtn{
-        top:50%;
+        top:40%;
         left:10%
     }
     .RainDrop_container__1wFPD .RainDrop_bottomStickyContainer__cnGBH{
