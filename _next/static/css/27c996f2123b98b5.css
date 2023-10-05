@@ -497,6 +497,7 @@
 .EarthDot_earthContainer__3UcJi .EarthDot_greenDot__KSKPX{
     position:absolute;
     bottom:49.5%;
+    bottom:49.5%;
     right:27%;
     width:7%;
     opacity:0;
@@ -910,7 +911,7 @@
         transform:translateY(10px)
     }
     .RainDrop_container__1wFPD .RainDrop_inner__2in_F .RainDrop_content__21YKl.RainDrop_content2__eKDtn{
-        top:40%;
+        top:30%;
         left:10%
     }
     .RainDrop_container__1wFPD .RainDrop_bottomStickyContainer__cnGBH{
