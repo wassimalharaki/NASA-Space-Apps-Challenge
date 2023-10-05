@@ -5,13 +5,17 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.main_container {
+  width: 100%;
+}
+
 .scroll_container{
   min-width: 1px;
   z-index: 0;
   height: max-content;
   width: 100%;
   transform-origin: 0 0;
-  position: fixed;
+  position: relative;
   top: -250px;
 }
 
