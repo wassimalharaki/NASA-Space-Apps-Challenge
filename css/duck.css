@@ -209,6 +209,9 @@
 }
 
 .duck__inner {
+	display: flex;
+	flex-direction: column;
+	position: relative;
 	animation: bird-up-down var(--duck-speed-half) linear infinite;
 }
 
@@ -249,21 +252,23 @@
 }
 
 @keyframes moveDuck {
-	0% {
-		transform: translateX(0);
+	50% {
+		transform: translateX(calc(100vw - 152px));
 	}
 
-	100% {
-		transform: translateX(100vw);
-		/* vw stands for viewport width */
+	50.01% {
+		transform: translateX(calc(100vw - 152px)) scaleX(-1);
+	}
+
+	99.9% {
+		transform: translateX(0) scaleX(-1);
 	}
 }
 
 .duck__wrapper {
 	overflow: hidden;
-	/* This will hide the part of the duck that moves outside of this wrapper */
 }
 
 .duck {
-	/* animation: moveDuck 50s linear infinite; */
+	animation: moveDuck 12s linear infinite;
 }
