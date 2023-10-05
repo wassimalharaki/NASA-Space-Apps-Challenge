@@ -9,6 +9,10 @@
 	--duck-speed-half: calc(var(--duck-speed) / 2);
 }
 
+* {
+	font-size: 14px;
+}
+
 .duck {
 	display: flex;
 	flex-direction: column;
