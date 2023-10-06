@@ -6,31 +6,31 @@ const totalAttempts = 6;
 
 // List of words that are available for guessing
 const words = [
-    "Atmosphere",
-    "Climate",
-    "Condensate",  
-    "Precipitate",
-    "Sun",
-    "Cycle",
-    "Weather",
-    "Droplet",
-    "Vapor",
-    "River",
-    "Evaporate",
-    "Salty",
-    "Earth", 
-    "Lake",
-    "Cycle", 
-    "Vapor", 
-    "Layer",
-    "Sun",
-    "Water",
-    "Cloud",
-    "Land",
-    "Flow",
-    "Snow",
-    "Rock",
-    "Energy", 
+    "atmosphere",
+    "climate",
+    "condensate",  
+    "precipitate",
+    "sun",
+    "cycle",
+    "weather",
+    "droplet",
+    "vapor",
+    "river",
+    "evaporate",
+    "salty",
+    "earth", 
+    "lake",
+    "cycle", 
+    "vapor", 
+    "layer",
+    "sun",
+    "water",
+    "cloud",
+    "land",
+    "flow",
+    "snow",
+    "rock",
+    "energy", 
 ];
 
 // Randomly word picked from the list of words, initially empty.
@@ -114,7 +114,7 @@ function setInputStatus(status) {
  * Checks the user's guess, then modifies the visuals accordingly.
  */
 function checkGuess() {
-    const guess = document.getElementById('guess').value;
+    const guess = document.getElementById('guess').value.toLowerCase();
 
     if (guess.length < selectedWord.length) {
         const Toast = Swal.mixin({
