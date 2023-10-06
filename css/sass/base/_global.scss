@@ -1,0 +1,38 @@
+body {
+	background-color: $primaryBackground;
+	color: $primaryFont;
+}
+
+h1 {
+	padding: 2rem 0;
+}
+
+button {
+	background-color: darken($primaryAccent, 10);
+	border: 3px solid $menuPipeBackground;
+	border-radius: 0.5rem;
+
+	padding: 0.8rem 2rem;
+
+	&:hover,
+	&:focus {
+		background-color: $primaryAccent;
+	}
+
+	&:active {
+		border: 3px solid $uiHover;
+	}
+}
+
+label {
+	padding-right: 0.5rem;
+}
+
+a {
+	text-decoration: underline;
+
+	&:hover,
+	&:focus {
+		opacity: 60%;
+	}
+}
