@@ -10,6 +10,10 @@
 	<link rel="icon" type="image/x-icon" href="img/icons8-droplet-96.png">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
+	<!-- Guess game -->
+	<link rel="stylesheet" href="css/game1.css">
+	<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -18,6 +22,17 @@
 		<div class="cloud" id="cloud2"></div>
 		<div class="cloud" id="cloud3"></div>
 	</div>
+
+	<div id="popup" class="hidden">
+		<button class="close-btn" onclick="closeGameGuess()">&times;</button>
+		<h3 id="prompt">Guess the word</h3>
+		<p>Hint: <span id="hint"></span></p>
+		<p>Attempts left: <span id="remainingAttempts"></span></p>
+		<div id="attempts"></div>
+		<label for="guess"></label><input type="text" id="guess" placeholder="Guess the word!">
+		<button id="submit_guess" onclick=checkGuess()>Submit</button>
+	</div>
+
 	<div class="duck__wrapper">
 		<div class="duck">
 			<div class="duck__inner">
@@ -54,7 +69,7 @@
 				<a href="watercycle.html">Cycle</a>
 			</div>
 			<div class="poolRules3">
-				<a href="game1.html">Game1</a>
+				<button id="guessGame" onclick=showGameGuess()>Guess The Word</button>
 			</div>
 			<div class="poolRules4">
 				<a href="#">Game2</a>
@@ -71,6 +86,7 @@
 		</div>
 	</section>
 	<script src="js/app.js"></script>
+	<script src="game1.js"></script>
 </body>
 
 </html>
