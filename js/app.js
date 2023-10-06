@@ -38,3 +38,23 @@ while( i < App.numberOfDroplets ) {
     })
     i++
 }
+window.onload = () => {
+    let button = document.getElementById("submit");
+    button.style.backgroundColor = "#03a9f4";
+    button.style.animation = "loadingWave 20s linear";
+
+    button.addEventListener('animationend', () => {
+        button.removeAttribute('disabled');
+    });
+
+    button.onclick = () => {
+        // Remove the animation
+        button.style.animation = "none";
+        
+        // After a short delay, re-add the animation
+        setTimeout(() => {
+            button.style.animation = "loadingWave 20s linear";
+            button.setAttribute('disabled', 'true'); // Optionally disable the button again until animation ends
+        }, 50); // 50ms delay, which can be adjusted
+    };
+};
