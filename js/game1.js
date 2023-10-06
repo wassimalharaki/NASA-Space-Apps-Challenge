@@ -2,7 +2,7 @@
 let guessed = false;
 
 // Total number of attempts available for each word
-const totalAttempts = 6;
+const totalAttempts = 5;
 
 // List of words that are available for guessing
 const words = [
