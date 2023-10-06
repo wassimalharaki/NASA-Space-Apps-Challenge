@@ -208,7 +208,8 @@ a:hover {
     background-color: transparent;
     border: #cacaca solid 1px;
     color: #fff;
-    position: relative;
+    position: absolute;
+    bottom: 220px;
     overflow: hidden;
     cursor: pointer;
 }
