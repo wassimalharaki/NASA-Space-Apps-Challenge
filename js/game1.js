@@ -2,31 +2,26 @@
 let guessed = false;
 
 // Total number of attempts available for each word
-const totalAttempts = 5;
+const totalAttempts = 6;
 
 // List of words that are available for guessing
 const words = [
     "Atmosphere",
     "Climate",
-    "Condensate",
-    "Evaporate",
-    "Interact",
+    "Condensate",  
     "Precipitate",
     "Sun",
     "Cycle",
     "Weather",
     "Droplet",
     "Vapor",
-    "Runoff",
+    "River",
     "Evaporate",
     "Salty",
-    "Earth",
-    "Sleet",
-    "Circulate",
-    "Cycle",
-    "Soak",
-    "Vapor",
-    "Clay",
+    "Earth", 
+    "Lake",
+    "Cycle", 
+    "Vapor", 
     "Layer",
     "Sun",
     "Water",
@@ -35,7 +30,7 @@ const words = [
     "Flow",
     "Snow",
     "Rock",
-    "Energy"
+    "Energy", 
 ];
 
 // Randomly word picked from the list of words, initially empty.
@@ -80,6 +75,11 @@ function showGameGuess() {
     selectedWord = words[Math.floor(Math.random() * words.length)];
     setWordCountHint(selectedWord.length);
     setAttempts(guessesLeft);
+
+    // set the maximum length of the input box to be as the word's
+    const inputDiv = document.getElementById('guess');
+    inputDiv.maxLength = selectedWord.length;
+
     document.getElementById('popup').style.display = 'block';
 }
 
@@ -115,6 +115,22 @@ function setInputStatus(status) {
  */
 function checkGuess() {
     const guess = document.getElementById('guess').value;
+
+    if (guess.length < selectedWord.length) {
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true
+        });
+        Toast.fire({
+            icon: 'error',
+            title: 'The number of letters should be '  + selectedWord.length + '.'
+        });
+
+        return;
+    }
     const attemptsDiv = document.getElementById('attempts');
     const attemptDiv = generateWordRow();
 
