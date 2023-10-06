@@ -1,0 +1,260 @@
+.game-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	user-select: none;
+}
+
+.game {
+	background-color: $gameBackground;
+
+	// apply border to game board
+	border: $gameBorder solid $primaryAccent;
+
+	// set dimensions of game board, taking border size into account
+	width: calc(#{$boardWidth} + (2 * #{$gameBorder}));
+	height: calc(#{$boardHeight} + (2 * #{$gameBorder}));
+
+	display: grid;
+
+	grid-template-rows: repeat($rows, 1fr);
+	grid-template-columns: repeat($cols, 1fr);
+}
+
+// game tile
+.square {
+	width: $pieceWidth;
+	height: $pieceHeight;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.game & {
+		border: 0.5px solid $secondaryAccent;
+	}
+
+	.menu & {
+		cursor: pointer;
+
+		background-color: $menuPipeBackground;
+		border-radius: 15%;
+
+		&:hover {
+			background-color: lighten($menuPipeBackground, 10);
+		}
+	}
+
+	&.ui-state-hover:not(.occupied) {
+		background-color: $uiHover;
+	}
+}
+
+
+.leak {
+	background-color: $leak;
+}
+
+.blocked {
+	.pipe {
+		opacity: 50%;
+	}
+}
+
+.pipe {
+	&.rotate0 {
+		transform: rotate(0deg);
+	}
+	&.rotate1 {
+		transform: rotate(90deg);
+	}
+	&.rotate2 {
+		transform: rotate(180deg);
+	}
+	&.rotate3 {
+		transform: rotate(270deg);
+	}
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	background-color: $menuBackground;
+
+	width: calc(#{$boardWidth} + (2 * #{$gameBorder}));
+	height: 150px;
+	border: $gameBorder solid $primaryAccent;
+	border-top: none;
+
+	position: relative;
+
+	.pipes {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		width: 80%;
+
+		&-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			width: 60%;
+			height: 100%;
+
+			padding: 10px;
+		}
+		&-instructions {
+			display: flex;
+			justify-content: space-evenly;
+
+			width: 100%;
+
+			position: relative;
+			top: 2rem;
+		}
+	}
+
+	.hidden {
+		display: none;
+	}
+}
+
+.controls {
+	width: 40%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	.buttons {
+		display: flex;
+		justify-content: center;
+	}
+
+	button {
+		width: 40%;
+
+		margin: 0.5rem;
+	}
+}
+
+.timer {
+	text-align: center;
+	font-size: 2rem;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	p {
+		display: inline;
+
+		&.difficulty {
+			font-size: 2.4rem;
+			letter-spacing: 0.1em;
+		}
+		&.time {
+			font-size: 1.6rem;
+		}
+	}
+
+	span {
+		font-size: 3rem;
+
+		// padding: 0.8rem;
+	}
+
+	.blue {
+		color: $leak;
+	}
+
+	i {
+		padding-right: 0.8rem;
+	}
+}
+
+.settings {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	form {
+		width: 50%;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.instructions {
+	width: 40%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	h2 {
+		text-align: center;
+	}
+
+	p {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+}
+
+.pipe-image {
+	display: inline-block;
+	height: 45px;
+	width: 45px;
+}
+
+.instructions-leak {
+	display: flex;
+	justify-content: space-around;
+	
+	p {
+		width: 9rem;
+	}
+
+	img {
+		width: calc(45px * 3);
+		align-self: flex-start;
+	}
+}
+
+.volume,
+.signature {
+	color: lighten($primaryAccent, 15);
+	
+	position: absolute;
+	bottom: -26px;
+}
+
+.volume {
+	cursor: pointer;
+	left: 0;
+
+	&:hover,
+	&:focus {
+		opacity: 70%;
+	}
+}
+
+.signature {
+	right: 0;
+}

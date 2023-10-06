@@ -17,6 +17,22 @@ body {
     background-position-y: 0px;
 }
 
+.logoimg {
+    width: 72px;
+    height: 70px;
+}
+
+.logo {
+  display: flex;
+}
+
+
+#logoName {
+    font-style: bold;
+    font-size: 24px;
+    margin-top: 12%;
+}
+
 section {
     position: relative;
     width: 100%;

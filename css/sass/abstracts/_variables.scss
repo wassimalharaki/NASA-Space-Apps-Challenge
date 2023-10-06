@@ -1,0 +1,28 @@
+// colours
+	// background
+	$primaryBackground: #2c2925;
+	$gameBackground: #443f38;
+	$menuBackground: #2c2925;
+
+	// font
+	$primaryFont: #ffffff;
+
+	// accent & pseudo-states
+	$primaryAccent: rgb(204, 200, 187);
+	$secondaryAccent: #202020;
+	$menuPipeBackground: #443f38;
+	$leak: #3295e6;
+	$uiHover: #c58b1e;
+
+// game sizes
+	$cols: 12;
+	$rows: 8;
+
+	$boardWidth: 600px;
+	$boardHeight: 400px;
+
+	$pieceWidth: 50px;
+	$pieceHeight: 50px;
+
+// game border
+	$gameBorder: 5px;
