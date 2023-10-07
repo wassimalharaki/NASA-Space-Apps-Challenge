@@ -38,3 +38,12 @@ while( i < App.numberOfDroplets ) {
     })
     i++
 }
+
+var qIndex = 0;
+var questions = [
+    "In the last century, Earth's temperature rose by about one degree Fahrenheit.",
+    "Human activities, especially burning fossil fuels, are impacting our climate.",
+    "NASA uses satellites to study these climate changes, and we can help by conserving energy.",
+    "The ocean shapes our planet's climate and weather by absorbing, storing, and transporting large quantities of heat, water, moisture, and carbon dioxide.",
+    "NASA’s Physical Oceanography (PO) program enables research that advances our understanding of the ocean’s role in climate."
+];
