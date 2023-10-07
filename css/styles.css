@@ -163,6 +163,10 @@ a:hover {
     }
 }
 
+.no-border {
+    border: 0;
+}
+
 #clickme {
     margin-bottom: -20px;
     margin-left: 20px;
