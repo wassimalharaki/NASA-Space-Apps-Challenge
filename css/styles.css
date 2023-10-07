@@ -163,6 +163,14 @@ a:hover {
     }
 }
 
+.logoinsign {
+    border: 0;
+}
+
+.no-border {
+    border: 0;
+}
+
 #clickme {
     margin-bottom: -20px;
     margin-left: 20px;

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Climate Change</title>
     <link rel="icon" type="image/x-icon" href="img/icons8-droplet-96.png">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="img/icons8-droplet-96.png">
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <!-- fontawesome -->
@@ -26,9 +29,22 @@
             <li><a href="waterpipes.html">Water Pipes</a></li>
         </ul>
     </div>
-    <div class="main_container">
+    <div class="main_container" style="color: black;">
         <h1>Hello global warming</h1>
     </div>
 </nav>
 </body>
+<script src="js/jquery-3.6.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/skrollr.min.js"></script>
+<script>
+    $(document).ready(function () {
+        skrollr.init({
+            smoothScrolling: true,
+            scale:2,
+            easing: "swing",
+        });
+        // Scroll message at start
+    });
+</script>
 </html>

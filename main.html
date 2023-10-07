@@ -20,6 +20,7 @@
 	<link rel="stylesheet" href="css/game1.css">
 	<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	
 </head>
 
 <body>
@@ -30,7 +31,7 @@
 	</div>
 
 	<div class="dropletBox">
-		<img src="./img/droplet_character.png" alt="Droplet" id="dropletImage">
+		<img src="./img/droplet_character_flipped.png" alt="Droplet" id="dropletImage">
 		<p class="dropletCounter"><span id="dropletCount" class="dropletCounter">0</span> Droplets</p>
 	</div>
 
@@ -75,7 +76,8 @@
 				<div class="c pine"></div>
 				<div class="c pine2"></div>
 			</div>
-			<div class="poolRules">
+			<div class="poolRules" style="display: flex; align-items: center; justify-content: center; border-width: 0;">
+				<img src="./img/droplet_drop.png" width="60px" height="58px" class="logoinsign">
 				Droplet
 			</div>
 			<div class="poolRules1">
