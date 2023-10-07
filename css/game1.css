@@ -1,5 +1,9 @@
 #popup {
-    background-color: #ffffff;
+    background: -webkit-linear-gradient(90deg, #085078 10%, #85D8CE 90%); /* Chrome 10+, Saf5.1+ */
+  position: relative;
+  background-size: auto 10000px;
+  background-position: center -50px;
+  background-repeat: no-repeat;
     padding: 20px;
     z-index: 500;
     border-radius: 10px;
@@ -11,9 +15,15 @@
     width: 90%;
     max-width: 400px;
 }
-
+#prompt{
+    font-size: 50px;
+}
+.hidden p, span{
+    font-size: 20px;
+}
 .hidden {
     display: none;
+    color: #fff
 }
 
 .close-btn {
@@ -58,10 +68,13 @@ button:disabled:hover {
 #guess {
     width: 100%;
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 10px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #ffffff;
+}
+::placeholder{
+    color: #fff;
 }
  
 #attempts div {

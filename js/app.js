@@ -1,5 +1,5 @@
 var App = {
-    numberOfDroplets: 0  
+    numberOfDroplets: 200  
 }
 
 App.spawnDroplet = function(input) {
