@@ -10,6 +10,12 @@
 	<link rel="icon" type="image/x-icon" href="img/icons8-droplet-96.png">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
+	<!-- paper buttons  -->
+	<link
+			rel="stylesheet"
+			href="./css/paper.css"
+	/>
+
 	<!-- Guess game -->
 	<link rel="stylesheet" href="css/game1.css">
 	<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
@@ -52,29 +58,22 @@
 			<div class="pole"></div>
 			<div class="poleR"></div>
 			<div class="sign">
-				<div class="c pine"></div>
 				<div class="c pine2"></div>
 				<div class="c pine3"></div>
 				<div class="c pine"></div>
 				<div class="c pine2"></div>
-				<div class="c pine4"></div>
 			</div>
 			<div class="poolRules">
 				Droplet
 			</div>
 			<div class="poolRules1">
-				<a id="selected" href="index.html">Home</a>
+				<a class="paper-btn btn-small btn-secondary-outline signBtn" href="watercycle.html">Cycle</a>
 			</div>
 			<div class="poolRules2">
-				<a href="watercycle.html">Cycle</a>
+				<a class="paper-btn btn-small btn-secondary-outline signBtn " onclick=showGameGuess()>Guess The Word</a>
 			</div>
 			<div class="poolRules3">
-				<button id="guessGame" onclick=showGameGuess()>Guess The Word</button>
-			</div>
-			<div class="poolRules4">
-				<a href="waterpipes.html">Water Pipes</a>
-			</div>
-			<div class="poolRules5">
+				<a class="paper-btn btn-small btn-secondary-outline signBtn" href="waterpipes.html">Water Pipes</a>
 			</div>
 		</div>
 		<div class="waves">
