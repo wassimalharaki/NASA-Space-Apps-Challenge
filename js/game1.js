@@ -1,6 +1,7 @@
 // True if the user guessed the word
 let guessed = false;
 let day = 1;
+let score = 0;
 
 // Total number of attempts available for each word
 const totalAttempts = 5;
@@ -137,7 +138,6 @@ function checkGuess() {
             icon: 'error',
             title: 'The number of letters should be '  + selectedWord.length + '.'
         });
-
         return;
     }
     const attemptsDiv = document.getElementById('attempts');
@@ -191,6 +191,8 @@ function checkGuess() {
         }
     }
     updateAttempts();
+    score++;
+        updateGameScore();
 }
 
 /**
@@ -206,3 +208,7 @@ document.getElementById('guess').addEventListener('keydown', function(event) {
         document.getElementById('submit_guess').click();
     }
 });
+function updateGameScore() {
+    document.getElementById("dropletCount").textContent = score.toString();
+}
+
