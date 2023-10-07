@@ -257,7 +257,7 @@ pre {
 }
 
 a {
-  background-color: rgba(0, 0, 128, 0.5);
+  background-color: rgba(11, 116, 213, 0.15);
   -webkit-text-decoration-skip: objects;
 }
 
@@ -1719,14 +1719,14 @@ button.btn-primary,
   color: #41403e;
   color: var(--primary-text);
   background-color: #41403e;
-  background-color: rgba(0, 0, 128, 0.5);
+  background-color: rgba(11, 116, 213, 0.15);
   border-color: #41403e;
   border-color: var(--primary);
 }
 button.btn-primary:hover:active,
 .paper-btn.btn-primary:hover:active,
 [type=button].btn-primary:hover:active {
-  background-color: rgba(0, 0, 128, 0.5);
+  background-color: rgba(11, 116, 213, 0.15);
 }
 
 button.btn-secondary,
@@ -1735,14 +1735,14 @@ button.btn-secondary,
   color: #41403e;
   color: var(--secondary-text);
   background-color: #41403e;
-  background-color: rgba(0, 0, 128, 0.5);
+  background-color: rgba(11, 116, 213, 0.15);
   border-color: #41403e;
   border-color: var(--secondary);
 }
 button.btn-secondary:hover:active,
 .paper-btn.btn-secondary:hover:active,
 [type=button].btn-secondary:hover:active {
-  background-color: rgba(0, 0, 128, 0.5);
+  background-color: rgba(11, 116, 213, 0.15);
 }
 
 button.btn-success,
@@ -1813,7 +1813,7 @@ button.btn-primary-outline,
 .paper-btn.btn-primary-outline,
 [type=button].btn-primary-outline {
   background-color: #41403e;
-  background-color: rgba(0, 0, 128, 0.5);
+  background-color: rgba(11, 116, 213, 0.15);
   color: #41403e;
   color: var(--primary);
   border-color: #41403e;
@@ -1822,19 +1822,19 @@ button.btn-primary-outline,
 button.btn-primary-outline:hover,
 .paper-btn.btn-primary-outline:hover,
 [type=button].btn-primary-outline:hover {
-  background-color: rgba(0, 0, 128, 0.5);
+  background-color: rgba(11, 116, 213, 0.15);
 }
 button.btn-primary-outline:hover:active,
 .paper-btn.btn-primary-outline:hover:active,
 [type=button].btn-primary-outline:hover:active {
-  background-color: rgba(0, 0, 128, 0.5);
+  background-color: rgba(11, 116, 213, 0.15);
 }
 
 button.btn-secondary-outline,
 .paper-btn.btn-secondary-outline,
 [type=button].btn-secondary-outline {
   background-color: #41403e;
-  background-color: rgba(0, 0, 128, 0.5);
+  background-color: rgba(11, 116, 213, 0.15);
   color: #41403e;
   color: var(--secondary);
   border-color: #41403e;
@@ -1843,12 +1843,12 @@ button.btn-secondary-outline,
 button.btn-secondary-outline:hover,
 .paper-btn.btn-secondary-outline:hover,
 [type=button].btn-secondary-outline:hover {
-  background-color: rgba(0, 0, 128, 0.5);
+  background-color: rgba(11, 116, 213, 0.15);
 }
 button.btn-secondary-outline:hover:active,
 .paper-btn.btn-secondary-outline:hover:active,
 [type=button].btn-secondary-outline:hover:active {
-  background-color: rgba(0, 0, 128, 0.5);
+  background-color: rgba(11, 116, 213, 0.15);
 }
 
 button.btn-success-outline,
@@ -2256,7 +2256,7 @@ textarea[disabled] {
   transform: rotateX(30deg);
 }
 .form-group .paper-switch-tile:hover:checked + .paper-switch-tile-card {
-  background-color: rgba(0, 0, 128, 0.5);
+  background-color: rgba(11, 116, 213, 0.15);
   box-shadow: 0 10px 15px -15px rgba(0, 0, 0, 0.9);
   transform: rotateX(150deg);
 }
@@ -2267,7 +2267,7 @@ textarea[disabled] {
   transform: rotateX(180deg);
 }
 .form-group .paper-switch-tile-card {
-  background-color: rgba(0, 0, 128, 0.5);
+  background-color: rgba(11, 116, 213, 0.15);
   border-color: transparent;
   height: 100%;
   position: relative;
