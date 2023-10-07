@@ -20,7 +20,7 @@
 <nav>
     <div class="container">
         <div class="logo">
-            <div><img class="logoimg" src="./img/droplet.PNG"></div>
+            <div><img class="logoimg" src="./img/droplet.PNG" alt="logl"></div>
             <div id="logoName"><h4>DROPLET.</h4></div>
         </div>
         <ul>
@@ -30,21 +30,96 @@
         </ul>
     </div>
     <div class="main_container" style="color: black;">
-        <h1>Hello global warming</h1>
+        <header>
+            <img src="Assets/ClimateChange/earthcrop.jpg" alt="earth" />
+        </header>
+
+        <div class="white-bg">
+            <div class="blue-bg">
+                <h1 class="title">Climate Change and the Water Cycle</h1>
+                <p class="title">Explore the Effects of Climate Change on Our Precious Resource</p>
+            </div>
+        </div>
+
+        <section id="altered-precipitation">
+            <h2>Altered Precipitation Patterns</h2>
+            <p>
+                Changes in precipitation patterns can lead to
+                increased instances of both droughts and heavy
+                rainfall events. This can disrupt water availability
+                for agriculture, affect drinking water supplies,
+                and increase the risk of flooding.
+            </p>
+            <img class="imgDesc" src="Assets/ClimateChange/flood1.jpg" alt="Altered Precipitation Image">
+            <p class="imgDescLabel">Typhoon Noru Philippines, 2022</p>
+            <p>
+                The main driver for these changes is the rise of global temperatures.
+                These temperatures alter precipitation patterns by increasing atmospheric moisture content,
+                resulting in more frequent and intense rainfall events in some regions and prolonged droughts in others.
+            </p>
+            <img src="Assets/ClimateChange/GlobalTemp.png" alt="Global temp graph" />
+            <a href="https://www.eea.europa.eu/data-and-maps/daviz/reported-flood-phenomena#tab-chart_1">
+                <img alt="chart_1" src="https://www.eea.europa.eu/data-and-maps/daviz/reported-flood-phenomena/chart_1.png" />
+            </a>
+            <p>
+                The above graphs showcase an upwards trend for both the number
+                of floods and the global temperatures.
+            </p>
+        </section>
+
+        <section id="extreme-weather-events">
+            <h2>Increased Natural Events</h2>
+            <p>
+                More frequent and severe weather events like
+                hurricanes, cyclones, and heavy storms
+                have increased steadily in the past century due
+                to climate change.
+            </p>
+            <img class="imgDesc" src="Assets/ClimateChange/effects2.jpg" alt="hurricane-damage">
+            <p class="imgDescLabel">
+                Aftermath of Hurricane Ian in Matlacha, Fla. 2022
+            </p>
+            <img src="Assets/ClimateChange/natdis1.png" alt="Extreme Weather Image">
+        </section>
+
+        <section id="glacier-issues">
+            <h2>Melting Ice</h2>
+            <p>
+                Rising temperatures cause glaciers and snowpacks to
+                shrink and melt earlier, affecting the timing and
+                availability of freshwater downstream. These changes are intimately
+                related to the water cycle, particularly in regions where glaciers
+                and snowpack play a vital role in freshwater supply.
+            </p>
+            <img src="Assets/ClimateChange/meltice1.jpg" alt="polar bear on thin ice">
+            <img src="Assets/ClimateChange/LandIceAntarctica.png" alt="Water Quality Image">
+            <p>
+                The above graph demonstrates the rapid shrinking of the Antarctic
+                mass, which is mostly composed of frozen water.
+            </p>
+        </section>
+
+        <section id="sea-level-rise">
+            <h2>Rise of Sea Levels</h2>
+            <p>
+                Rising sea levels are a direct consequence of
+                melting ice, and perhaps the most destructive one.
+                They threaten low-lying islands, coastal areas,
+                they influence weather patterns, and exacerbate flooding.
+            </p>
+            <img class="imgDesc" src="Assets/ClimateChange/SeaLevel.png" alt="Sea Level Rise Image">
+            <p class="imgDescLabel">Rapid rise of sea levels</p>
+        </section>
+
+        <section id="summary">
+            <h2>Summary</h2>
+            <img src="Assets/ClimateChange/allEffects.jpg" alt="Summary">
+        </section>
+
+        <section id="final-destination">
+            <a style="color: black;">???</a>
+        </section>
     </div>
 </nav>
 </body>
-<script src="js/jquery-3.6.4.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/skrollr.min.js"></script>
-<script>
-    $(document).ready(function () {
-        skrollr.init({
-            smoothScrolling: true,
-            scale:2,
-            easing: "swing",
-        });
-        // Scroll message at start
-    });
-</script>
 </html>

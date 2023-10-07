@@ -2,10 +2,6 @@ body {
     margin: 0;
 }
 
-header {
-    margin-top: 80px;
-}
-
 html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -65,11 +61,13 @@ nav {
     font-family: 'Poppins', sans-serif;
 }
 .main_container {
+    padding-bottom: 70px;
     top: 70px;
+    height: 100vh;
     position: absolute;
     width: 100%;
-    height: max-content;
     overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .container {
@@ -119,6 +117,108 @@ a:hover {
 }
 
 body {
+    justify-content: center;
     background-image: url(../img/clouds-bg.jpg);
     color: #ffffff;
+}
+
+section {
+    border: 2px solid #8bb6f6;
+    background-color: #fff;
+    padding: 20px 40px 20px 40px;
+    margin: 20px auto 20px auto;
+    width: 80%;
+    align-self: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+    font-weight: bold;
+    color: #2980b9;
+    margin-bottom: 30px;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+section .imgDesc {
+    margin-bottom: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2980b9;
+    color: #fff;
+}
+
+header {
+    background-color: #2980b9;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+.imgDescLabel {
+    margin-left: 10px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.white-bg {
+    position: relative;
+    background-color: #58aff6;
+    margin-top: 300px;
+    margin-bottom: 80px;
+    padding-top: 30px;
+    width: 100vw;
+    height: 250px;
+    transform: skewY(5deg);
+    z-index: -1;
+}
+
+header img {
+    object-fit: cover;
+}
+
+header {
+    position: fixed;
+    background: #58aff6;
+    top: 70px;
+    width: 100vw;
+    height: 400px;
+    z-index: -1;
+    padding: 0;
+    border-bottom: 10px solid #8bb6f6;
+    overflow-x: hidden
+}
+
+.blue-bg {
+    margin: auto;
+    background-color: #fff;
+    width: 100%;
+    height: 90%;
+    padding-top: 60px;
+    text-justify: auto;
+    text-align: center;
+}
+
+.title {
+    font-weight: bold;
+    color: #36a3ff;
 }
