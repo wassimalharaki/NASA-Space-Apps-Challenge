@@ -171,6 +171,7 @@ function checkGuess() {
             confetti();
             
             soundEffect.play();
+            score+=3; 
 
             setInputStatus(false);
         } else {
@@ -191,7 +192,6 @@ function checkGuess() {
         }
     }
     updateAttempts();
-    score++;
         updateGameScore();
 }
 
