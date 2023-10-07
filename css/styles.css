@@ -163,6 +163,10 @@ a:hover {
     }
 }
 
+.logoinsign {
+    border: 0;
+}
+
 .no-border {
     border: 0;
 }
