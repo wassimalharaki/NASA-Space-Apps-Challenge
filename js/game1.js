@@ -109,10 +109,14 @@ function generateWordRow() {
 }
 
 /**
- * @param status { boolean } true enables btn, false disables.
+ * @param status { boolean } true enables input, false disables.
  */
 function setInputStatus(status) {
+    // Disables/! text input
     document.getElementById('guess').disabled = !status;
+
+    // Disables/! btn
+    document.getElementById('submit_guess').disabled = !status;
 }
 
 /**
