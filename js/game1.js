@@ -1,5 +1,6 @@
 // True if the user guessed the word
 let guessed = false;
+let day = 1;
 
 // Total number of attempts available for each word
 const totalAttempts = 5;
@@ -32,6 +33,10 @@ const words = [
     "rock",
     "energy", 
 ];
+
+// initialize the sound effect to be played
+var soundEffect = new Audio(); 
+soundEffect.src = "./sound_effects/success.mp3";
 
 // Randomly word picked from the list of words, initially empty.
 let selectedWord = "";
@@ -160,6 +165,9 @@ function checkGuess() {
         if (guess === selectedWord) {
             guessed = true;
             confetti();
+            
+            soundEffect.play();
+
             setInputStatus(false);
         } else {
             const Toast = Swal.mixin({
