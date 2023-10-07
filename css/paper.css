@@ -964,7 +964,7 @@ html {
   color: #41403e;
   color: var(--primary);
   font-family: "Neucha", sans-serif;
-  font-size: 20px;
+
 }
 
 p,
@@ -1791,6 +1791,10 @@ button.btn-danger:hover:active,
 .paper-btn.btn-danger:hover:active,
 [type=button].btn-danger:hover:active {
   background-color: #e6a5a1;
+}
+
+.btn-secondary-outline {
+  font-size: 20px;
 }
 
 button.btn-muted,

@@ -174,7 +174,7 @@ a:hover {
 #cloud2 {
     top: -70px;
     z-index: 16;
-    background-image: url(../img/cloud2.svg);
+    background-image: url(../img/cloud2 vg);
     background-size: contain;
     animation: cloudanimate 32s linear infinite;
 }
