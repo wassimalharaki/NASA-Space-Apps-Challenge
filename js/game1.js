@@ -5,7 +5,7 @@ let score = 0;
 
 window.onload = () => {
     Swal.fire({
-        iconHtml: '<img src="./img/droplet_character_flipped.png" style="border: none;"/>',
+        iconHtml: '<img src="./img/droplet_character_flipped_sad.png" style="border: none;"/>',
         title: 'Save Droplet!',
         text: "Your mission is to collect the most amount of droplets by playing guess the word to save Droplet.",
         customClass: {
