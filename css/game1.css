@@ -1,5 +1,5 @@
 #popup {
-    background: -webkit-linear-gradient(90deg, #085078 10%, #85D8CE 90%); /* Chrome 10+, Saf5.1+ */
+    background: linear-gradient(steelblue, darkslateblue);
   position: relative;
   background-size: auto 10000px;
   background-position: center -50px;
@@ -34,12 +34,12 @@
     background-color: transparent;
     font-size: 24px;
     cursor: pointer;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .close-btn:hover {
     background-color: transparent;
-    color: #007BFF;
+    color: #ffffff;
 }
 
 button {
@@ -72,6 +72,7 @@ button:disabled:hover {
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #ffffff;
+    color: #fff;
 }
 ::placeholder{
     color: #fff;
@@ -83,7 +84,7 @@ button:disabled:hover {
 }
 
 #submit_guess {
-    margin-left: 32%;
+    margin-left: 37%;
 }
 
 .letter {
