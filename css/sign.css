@@ -3,7 +3,7 @@
 	display:inline-block;
 	height:330px;
 	margin-top: 10px;
-	width:50px;
+	width:70px;
 	margin-right: 3px;
 
 	box-shadow:2px -2px 2px rgba(0,0,0,0.5);
@@ -34,7 +34,7 @@
 	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='filter'%3E%3CfeTurbulence baseFrequency='0.15 0.01' numOctaves='1' seed='10' /%3E%3CfeColorMatrix values='0 0 0 0.11 0.69 0 0 0 0.09 0.38 0 0 0 0.08 0.14 0 0 0 0 1'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23filter)'/%3E%3C/svg%3E%0A") no-repeat center;
 	position:absolute;
 	left:70%;
-	top:calc(50% + 270px);
+	top:calc(38% + 270px);
 	transform:translate(-50%,-50%);
 	height: 850px;
 	width:50px;
@@ -48,7 +48,7 @@
 	height:100%;
 	width:100%;
 	transform:translate(-46%,-50%);
-	background-image:linear-gradient(90deg, rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+	background-image:linear-gradient(90deg, rgba(0,0,0,0.2), rgba(0,0,0,0.25));
 }
 .poleR {
 	left:30%;
@@ -61,7 +61,7 @@
 
 .sign {
 	position:absolute;
-	width: 280px;
+	width: 305px;
 	height: 350px;
 	left:50%;
 	top:40%;
@@ -79,17 +79,17 @@
 	font-family: 'East Sea Dokdo', cursive;
 	position:absolute;
 	left:50%;
-	top:41%;
+	top:40%;
 	transform:translate(-50%, calc(-50% - 120px));
 	font-size:2em;
-	color:black;
+	color: rgb(140, 100, 52);
 	opacity:0.8;
 }
 .poolRules1 {
 	font-family: 'East Sea Dokdo', cursive;
 	position:absolute;
 	left:50%;
-	top:43%;
+	top:47%;
 	transform:translate(-50%, calc(-50% - 73px));
 	font-size:1.3em;
 	color:white;
@@ -99,7 +99,7 @@
 	font-family: 'East Sea Dokdo', cursive;
 	position:absolute;
 	left:50%;
-	top:45%;
+	top:53%;
 	transform:translate(-50%, calc(-50% - 26px));
 	font-size:1.4em;
 	color:white;
@@ -109,7 +109,7 @@
 	font-family: 'East Sea Dokdo', cursive;
 	position:absolute;
 	left:50%;
-	top:47%;
+	top:59%;
 	transform:translate(-50%, calc(-50% + 22px));
 	font-size:1.4em;
 	color:white;
