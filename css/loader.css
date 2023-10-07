@@ -1,0 +1,132 @@
+@import 'https://fonts.googleapis.com/css?family=Oswald';
+
+
+html, body {
+  background: #005C97;
+  background: linear-gradient(to left, #005C97 , #363795);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 6px;
+  overflow: hidden;
+}
+
+.water-fill {
+  animation: wave 0.7s infinite linear, 
+             fill-up 10s infinite ease-out alternate;
+}
+
+@keyframes wave {
+  0% { x: -400px; }
+  100% { x: 0; }
+}
+
+
+@keyframes fill-up {
+  0% {
+    height: 0;
+    y: 130px;
+  }
+  100% {
+    height: 160px;
+    y: -30px;
+  }
+}
+
+.hold {
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-left: 500px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .sell {
+    width: 15%;
+    line-height: 50px;
+    height: 50px;
+    display: block;
+    padding: 0;
+    margin: 0;
+    float: left;
+    font-weight: 700;
+  }
+  
+  .word {
+    width: 85%;
+    height: 50px;
+    float: left;
+    overflow: hidden;
+    margin-top:50px ;
+    margin-right: 150px;
+  }
+  
+  .holder {
+    width: 100%;
+    height: 200px;
+    -webkit-animation: holder 8s none infinite;
+  }
+  
+  .holder div {
+    width: 800px;
+    height: 250px;
+    line-height: 50px;
+    overflow: hidden;
+    box-sizing: border-box;
+    -webkit-animation: yo 2s none infinite;
+    color: #0077ee;
+  }
+  
+  @keyframes holder {
+    0% {
+      margin-top: 0px;
+    }
+    24.9% {
+      margin-top: 0px;
+    }
+    25% {
+      margin-top: -50px;
+    }
+    49.9% {
+      margin-top: -50px;
+    }
+    50% {
+      margin-top: -100px;
+    }
+    74.9% {
+      margin-top: -100px;
+    }
+    75% {
+      margin-top: -150px;
+    }
+    100% {
+      margin-top: -150px;
+    }
+  }
+  
+  @keyframes yo {
+    0% {
+      height: 0px;
+      line-height: 0px;
+      margin-top: 25px;
+      margin-bottom: 50px;
+    }
+    50% {
+      height: 50px;
+      line-height: 50px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    100% {
+      height: 0px;
+      line-height: 0px;
+      margin-top: 25px;
+      margin-bottom: 50px;
+    }
+  }
