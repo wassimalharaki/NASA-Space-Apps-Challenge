@@ -163,6 +163,14 @@ a:hover {
     }
 }
 
+#clickme {
+    margin-bottom: -20px;
+    margin-left: 20px;
+    width: 50px;
+    transform: rotate(-40deg);
+    border: transparent solid 3px;
+}
+
 #cloud1 {
     top: -30px;
     z-index: 15;
@@ -174,7 +182,7 @@ a:hover {
 #cloud2 {
     top: -70px;
     z-index: 16;
-    background-image: url(../img/cloud2 vg);
+    background-image: url(../img/cloud2.svg);
     background-size: contain;
     animation: cloudanimate 32s linear infinite;
 }
