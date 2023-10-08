@@ -2,10 +2,11 @@ body {
     margin: 0;
     overflow: hidden;
     justify-content: center;
-    font-size: 1.6rem;
-    font-family: 'Bebas Neue', sans-serif;
     text-align: center;
     color: white;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Poppins, serif;
     background-color: black;
 }
 
@@ -15,6 +16,7 @@ img {
     height: auto;
     object-fit: contain;
     display: block;
+    transition: all 1s ease-in-out;
 }
 
 .main_container {
@@ -93,10 +95,6 @@ img {
     transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
 .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
@@ -126,4 +124,19 @@ img {
 
 .flip-card-back {
     transform: rotateY(180deg);
+}
+
+.blinking-cursor {
+    margin-left: 5px;
+    background-color: #fff;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    50.1%, 100% {
+        opacity: 0;
+    }
 }
