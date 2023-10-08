@@ -182,6 +182,14 @@ a:hover {
     }
 }
 
+.date {
+    top: 100px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px !important;
+}
+
 .logoinsign {
     border: 0;
 }
@@ -269,6 +277,12 @@ a:hover {
 
 .dropletCounter {
     font-size: large;
+}
+
+.dateCounter {
+    font-size: 20px;
+    color: lime;
+    font-weight: bold;
 }
 
 #dropletImage {
