@@ -16,8 +16,7 @@
     <link rel="stylesheet" href="./css/climateChange.css">
 </head>
 <body>
-
-<nav>
+<nav id="nav">
     <div class="container">
         <div class="logo">
             <div><img class="logoimg" src="./img/droplet.PNG" alt="logl"></div>
@@ -117,13 +116,27 @@
         </section>
 
         <section id="final">
-            <div class="box-3">
-                <div class="btn btn-three" onclick="window.location.href='storyAnimation.html'">
+            <div id="btnFinalContainer" class="box-3">
+                <div id="finalBtn" class="btn btn-three">
                     <span>??</span>
                 </div>
             </div>
         </section>
     </div>
+    <script>
+        const finalBtn = document.getElementById("finalBtn");
+        const body = document.body;
+
+        finalBtn.addEventListener("click", () => {
+            body.classList.add('zoom-in');
+            body.style.backgroundImage = `url('./Assets/stars.jpg')`;
+
+            // Wait for the animation to finish (0.5s) before navigating to the new page
+            setTimeout(() => {
+                window.location.href = 'storyAnimation.html'; // Replace 'newpage.html' with the URL of your new page
+            }, 700); // Adjust the timeout to match the duration of your animation
+        });
+    </script>
 </nav>
 </body>
 </html>

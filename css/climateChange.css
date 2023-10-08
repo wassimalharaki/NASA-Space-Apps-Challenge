@@ -295,7 +295,25 @@ header {
 }
 
 #final {
+    margin-bottom: 50px;
     border: none;
     background-color: transparent;
     box-shadow: none;
+}
+
+
+/* Define the zoom-in transition effect */
+.zoom-in {
+    animation: zoomIn 0.8s ease-in-out;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2); /* Adjust the scale factor as needed for your desired zoom level */
+        opacity: 0;
+    }
 }
