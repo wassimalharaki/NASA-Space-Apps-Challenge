@@ -152,7 +152,14 @@
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	animation: bird-up-down var(--duck-speed-half) linear infinite, moveDuck 12s linear infinite;
+	/* animation: bird-up-down var(--duck-speed-half) linear infinite, moveDuck 12s linear infinite; */
+}
+
+.clickmetext {
+	position: absolute;
+	top: 65px;
+	left: 75px;
+	z-index: 1001;
 }
 
 @keyframes bird-up-down {
