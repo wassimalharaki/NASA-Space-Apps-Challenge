@@ -152,7 +152,7 @@
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	/* animation: bird-up-down var(--duck-speed-half) linear infinite, moveDuck 12s linear infinite; */
+	animation: bird-up-down var(--duck-speed-half) linear infinite, moveDuck 12s linear infinite;
 }
 
 .clickmetext {
