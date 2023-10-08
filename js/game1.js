@@ -128,6 +128,8 @@ function setWordCountHint(count) {
 /**
  * Shows the game popup.
  */
+
+var random;
 function showGameGuess() {
     setInputStatus(true);
 
@@ -135,7 +137,9 @@ function showGameGuess() {
     document.getElementById("guess").value = "";
 
     // Select a random word
-    selectedWord = words[Math.floor(Math.random() * words.length)];
+    random = Math.floor(Math.random() * words.length);
+    random = 0;
+    selectedWord = words[random];
     setWordCountHint(selectedWord.length);
     setAttempts(guessesLeft);
 
@@ -181,7 +185,7 @@ function setInputStatus(status) {
  * Checks the user's guess, then modifies the visuals accordingly.
  */
 function checkGuess() {
-    const guess = document.getElementById('guess').value.toLowerCase();
+    const guess = document.getElementById('guess').value.toLowerCase().trim();
 
     if (guess.length < selectedWord.length) {
         const Toast = Swal.mixin({
@@ -228,6 +232,7 @@ function checkGuess() {
             confetti();
             
             soundEffect.play();
+            words.splice(random, 1);
             score+=3;
             updateGameScore();
             
