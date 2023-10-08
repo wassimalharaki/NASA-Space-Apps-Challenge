@@ -11,7 +11,7 @@ body {
 
 img {
     width: 450px;
-    margin: auto;
+    margin: auto auto 40px auto;
     height: auto;
     object-fit: contain;
     display: block;
@@ -78,7 +78,52 @@ img {
     transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card {
+    background-color: transparent;
+    width: 500px;
+    height: 110px;
+    margin: auto;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
 .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-card-front, .flip-card-back {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(77,77,77);
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.25);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.centered-text {
+    word-wrap: break-word; /* Allow text to wrap */
+    white-space: pre-line; /* Preserve newline characters */
+}
+
+.flip-card-back {
     transform: rotateY(180deg);
 }
