@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    justify-content: center;
+    font-size: 1.6rem;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+img {
+    width: 70%;
+    margin: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.main_container {
+    animation: fadeIn ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+.container {
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.bg{
+    width: 1000vw;
+    height: 1000vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background: url("../Assets/stars.jpg") 0 0 repeat;
+    animation-name: MOVE-BG;
+    animation-duration: 1000s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes MOVE-BG {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
