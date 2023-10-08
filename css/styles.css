@@ -154,6 +154,14 @@ a:hover {
     height: 140px;
 }
 
+.swal-btitle {
+    font-size: 22px;
+}
+
+.swal-stitle {
+    font-size: 18px;
+}
+
 @keyframes cloudanimate {
     0% {
         background-position-x: 0px;

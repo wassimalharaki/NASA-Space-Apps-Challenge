@@ -1,7 +1,7 @@
 // True if the user guessed the word
 let guessed = false;
 let day = 1;
-let score = 0;
+let score = 65;
 
 window.onload = () => {
     Swal.fire({
@@ -89,7 +89,7 @@ function showGameGuess() {
     document.getElementById("guess").value = "";
 
     // Select a random word
-    selectedWord = words[Math.floor(Math.random() * words.length)];
+    selectedWord = words[Math.floor(0)];
     setWordCountHint(selectedWord.length);
     setAttempts(guessesLeft);
 
@@ -147,7 +147,7 @@ function checkGuess() {
         });
         Toast.fire({
             icon: 'error',
-            title: 'The number of letters should be '  + selectedWord.length + '.'
+            title: '<p class="swal-stitle"> The number of letters should be '  + selectedWord.length + '.</p>'
         });
         return;
     }
@@ -172,17 +172,29 @@ function checkGuess() {
 
         attemptDiv.appendChild(span);
     }
-
+    
     // reduce attempts
     guessesLeft--;
-
+    
     if (guess === selectedWord || guessesLeft <= 0) {
         if (guess === selectedWord) {
             guessed = true;
             confetti();
             
             soundEffect.play();
-            score+=3; 
+            score+=3;
+            updateGameScore();
+            
+            if (score >= 66 && score <= 68) {
+                Swal.fire({
+                    iconHtml: '<img src="./img/droplet_character_flipped.png" style="border: none;"/>',
+                    title: 'Congratulations!',
+                    text: "You save the world with a total of " + score + " droplets!",
+                    customClass: {
+                        icon: 'no-border'
+                    }
+                });
+            };
 
             setInputStatus(false);
         } else {
@@ -190,12 +202,12 @@ function checkGuess() {
                 toast: true,
                 position: 'top-end',
                 showConfirmButton: false,
-                timer: 3000,
+                timer: 1000000,
                 timerProgressBar: true
             });
             Toast.fire({
                 icon: 'error',
-                title: 'Out of guesses.\nThe word was: ' + selectedWord + '.'
+                title: '<p class="swal-btitle">Out of guesses.\nThe word was: ' + selectedWord + '.</p>',
             });
             setTimeout(function() {
                 closeGameGuess();
@@ -203,7 +215,6 @@ function checkGuess() {
         }
     }
     updateAttempts();
-        updateGameScore();
 }
 
 /**
