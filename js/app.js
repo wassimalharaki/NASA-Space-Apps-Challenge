@@ -64,6 +64,8 @@ function didyouknow() {
     Swal.fire({
         iconHtml: '<img src="./img/NASA_logo.png" style="border: none;"/>',
         title: 'Did you know?',
+        timer: 5000,
+        timerProgressBar: true,
         text: questions[qIndex++ % questions.length],
         customClass: {
             icon: 'no-border',
