@@ -55,7 +55,7 @@ section .waves .wave {
 section .waves .wave#wave1 {
     opacity: 1;
     bottom: 0;
-    z-index: 10000;
+    z-index: 1000;
     animation: animate 4s linear infinite;
 }
 
