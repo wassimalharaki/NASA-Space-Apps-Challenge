@@ -90,7 +90,7 @@ function showGameGuess() {
     document.getElementById("guess").value = "";
 
     // Select a random word
-    selectedWord = words[0];
+    selectedWord = words[Math.floor(Math.random() * words.length)];
     setWordCountHint(selectedWord.length);
     setAttempts(guessesLeft);
 
