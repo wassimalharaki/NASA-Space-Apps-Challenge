@@ -128,13 +128,15 @@
         const body = document.body;
 
         finalBtn.addEventListener("click", () => {
-            body.classList.add('zoom-in');
-            body.style.backgroundImage = `url('./Assets/stars.jpg')`;
+            body.style.backgroundImage = `url('./Assets/black.jpg')`;
 
             // Wait for the animation to finish (0.5s) before navigating to the new page
             setTimeout(() => {
-                window.location.href = 'storyAnimation.html'; // Replace 'newpage.html' with the URL of your new page
-            }, 700); // Adjust the timeout to match the duration of your animation
+                body.classList.add('zoom-in');
+                setTimeout(() => {
+                    window.location.href = 'storyAnimation.html'; // Replace 'newpage.html' with the URL of your new page
+                }, 700);
+            }, 100); // Adjust the timeout to match the duration of your animation
         });
     </script>
 </nav>
