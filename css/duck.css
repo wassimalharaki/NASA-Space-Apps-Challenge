@@ -208,3 +208,7 @@
 .duck__wrapper {
 	overflow: visible;
 }
+
+.anim {
+	animation: moveDuck 12s linear infinite;
+}
