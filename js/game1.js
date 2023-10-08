@@ -90,7 +90,7 @@ function showGameGuess() {
     document.getElementById("guess").value = "";
 
     // Select a random word
-    selectedWord = words[Math.floor(Math.random() * words.length)];
+    selectedWord = words[0];
     setWordCountHint(selectedWord.length);
     setAttempts(guessesLeft);
 
@@ -233,5 +233,6 @@ document.getElementById('guess').addEventListener('keydown', function(event) {
 });
 function updateGameScore() {
     document.getElementById("dropletCount").textContent = score.toString();
+    document.getElementById("dateCount").textContent = (score / 3).toString();
 }
 
