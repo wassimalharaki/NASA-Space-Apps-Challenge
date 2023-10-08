@@ -46,13 +46,14 @@
 	</div>
 
 	<div class="duck__wrapper">
-		<div class="duck" onclick="
-		Swal.fire({
-			icon: 'info',
-			title: 'Did you know?',
-			text: questions[qIndex++ % questions.length],
-		})
-		">
+		<div class="duck">
+			<div class="cover" onclick="
+			Swal.fire({
+				icon: 'info',
+				title: 'Did you know?',
+				text: questions[qIndex++ % questions.length],
+			})
+			"></div>
 			<img src="img/clickme.gif" alt="clickme" id="clickme"/>
 			<div class="duck__inner">
 				<div class="duck__mouth"></div>
