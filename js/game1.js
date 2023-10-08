@@ -1,7 +1,7 @@
 // True if the user guessed the word
 let guessed = false;
 let day = 1;
-let score = 65;
+let score = 0;
 
 window.onload = () => {
     Swal.fire({
