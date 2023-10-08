@@ -162,6 +162,17 @@ a:hover {
     font-size: 18px;
 }
 
+.swal-button {
+    background-color: rgb(11, 62, 145) !important;
+    width: 50px;
+    font-size: 18px !important;
+}
+
+.swal-button-incfont {
+    font-size: 18px !important;
+    width: 50px;
+}
+
 @keyframes cloudanimate {
     0% {
         background-position-x: 0px;

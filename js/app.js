@@ -59,3 +59,15 @@ var questions = [
     "Most scientists say that humans can change climate. People drive cars. People heat and cool their houses. People cook food. All those things take energy.",
     "Scientists think we can do things to stop the climate from changing as much. You can help by using less energy and water. Turn off lights and TVs when you leave a room. Turn off the water when brushing your teeth."
 ];
+
+function didyouknow() {
+    Swal.fire({
+        iconHtml: '<img src="./img/NASA_logo.png" style="border: none;"/>',
+        title: 'Did you know?',
+        text: questions[qIndex++ % questions.length],
+        customClass: {
+            icon: 'no-border',
+            confirmButton: 'swal-button'
+        }
+    })
+}

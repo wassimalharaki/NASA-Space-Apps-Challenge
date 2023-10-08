@@ -9,7 +9,8 @@ window.onload = () => {
         title: 'Save Droplet!',
         text: "Your mission is to collect the most amount of droplets by playing guess the word to save Droplet.",
         customClass: {
-            icon: 'no-border'
+            icon: 'no-border',
+            confirmButton: 'swal-button-incfont'
         }
     });
 };
