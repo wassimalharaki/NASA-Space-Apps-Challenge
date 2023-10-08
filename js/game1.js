@@ -20,17 +20,12 @@ const totalAttempts = 5;
 
 // List of words that are available for guessing
 const words = [
-    "atmosphere",
-    "climate",
-    "condensate",  
-    "precipitate",
+    "water",
     "sun",
     "cycle",
     "weather",
-    "droplet",
     "vapor",
     "river",
-    "evaporate",
     "salty",
     "earth", 
     "lake",
@@ -38,14 +33,64 @@ const words = [
     "vapor", 
     "layer",
     "sun",
-    "water",
+    "climate",
     "cloud",
     "land",
     "flow",
     "snow",
     "rock",
-    "energy", 
+    "energy",
+    "ocean",
+    "sea",
+    "tide",
+    "rain",
+    "brook",
+    "stream",
+    "ice",
+    "polar",
+    "current",
+    "puddle",
+    "frost",
+    "pond",
+    "spring",
+    "rainbow",
+    "hail",
+    "spray",
+    "mist",
+    "surge",
+    "brine",
+    "marsh",
+    "flood",
+    "ripple",
+    "dew",
+    "drip",
+    "splash",
+    "soak",
+    "drizzle",
+    "spout",
+    "pool",
+    "wave",
+    "bubble",
+    "drink",
+    "float",
+    "sink",
+    "shower",
+    "drench",
+    "wade",
+    "creek",
+    "bay",
+    "beach",
+    "swamp",
+    "jet",
+    "fountain",
+    "spill",
+    "streamlet",
+    "delta",
+    "lagoon",
+    "channel"
 ];
+
+
 
 // initialize the sound effect to be played
 var soundEffect = new Audio(); 
@@ -83,6 +128,8 @@ function setWordCountHint(count) {
 /**
  * Shows the game popup.
  */
+
+var random;
 function showGameGuess() {
     setInputStatus(true);
 
@@ -90,7 +137,9 @@ function showGameGuess() {
     document.getElementById("guess").value = "";
 
     // Select a random word
-    selectedWord = words[0];
+    random = Math.floor(Math.random() * words.length);
+    random = 0;
+    selectedWord = words[random];
     setWordCountHint(selectedWord.length);
     setAttempts(guessesLeft);
 
@@ -136,7 +185,7 @@ function setInputStatus(status) {
  * Checks the user's guess, then modifies the visuals accordingly.
  */
 function checkGuess() {
-    const guess = document.getElementById('guess').value.toLowerCase();
+    const guess = document.getElementById('guess').value.toLowerCase().trim();
 
     if (guess.length < selectedWord.length) {
         const Toast = Swal.mixin({
@@ -183,6 +232,7 @@ function checkGuess() {
             confetti();
             
             soundEffect.play();
+            words.splice(random, 1);
             score+=3;
             updateGameScore();
             
@@ -203,7 +253,7 @@ function checkGuess() {
                 toast: true,
                 position: 'top-end',
                 showConfirmButton: false,
-                timer: 1000000,
+                timer: 3000,
                 timerProgressBar: true
             });
             Toast.fire({
