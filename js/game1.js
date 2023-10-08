@@ -90,7 +90,7 @@ function showGameGuess() {
     document.getElementById("guess").value = "";
 
     // Select a random word
-    selectedWord = words[Math.floor(0)];
+    selectedWord = words[Math.floor(Math.random() * words.length)];
     setWordCountHint(selectedWord.length);
     setAttempts(guessesLeft);
 
@@ -186,7 +186,7 @@ function checkGuess() {
             score+=3;
             updateGameScore();
             
-            if (score >= 66 && score <= 68) {
+            if (score == 3 * 66) {
                 Swal.fire({
                     iconHtml: '<img src="./img/droplet_character_flipped.png" style="border: none;"/>',
                     title: 'Congratulations!',
