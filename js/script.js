@@ -345,7 +345,7 @@ game.dragAndDrop = () => {
 					if (game.pipeNotHittingWall(exit)) {
 						const nextPipe = game.board[exit[1]][exit[0]].pipe;
 
-						// if the next pipe is connected
+						// if the _next pipe is connected
 						if (nextPipe && game.checkPipesConnected(game.currentPipe, nextPipe) && nextPipe.type !== 'end') {
 							canPlace = true;
 						};
@@ -421,10 +421,10 @@ game.waterToAttachedPipes = (end) => {
 			if (game.pipeNotHittingWall(exit)) {
 				const nextPipe = game.board[exit[1]][exit[0]].pipe;
 
-				// if the next pipe exists and isn't wet
+				// if the _next pipe exists and isn't wet
 				if (nextPipe !== null && !nextPipe.wet) {
 
-					// and if pipes are connected, make next pipe wet
+					// and if pipes are connected, make _next pipe wet
 					if (game.checkPipesConnected(pipe, nextPipe)) {
 						nextPipe.makeWet();
 					} else {
