@@ -248,7 +248,7 @@ function checkGuess() {
                 toast: true,
                 position: 'top-end',
                 showConfirmButton: false,
-                timer: 1000000,
+                timer: 3000,
                 timerProgressBar: true
             });
             Toast.fire({
@@ -278,5 +278,6 @@ document.getElementById('guess').addEventListener('keydown', function(event) {
 });
 function updateGameScore() {
     document.getElementById("dropletCount").textContent = score.toString();
+    document.getElementById("dateCount").textContent = (score / 3).toString();
 }
 
