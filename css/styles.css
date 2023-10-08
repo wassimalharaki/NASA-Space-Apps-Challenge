@@ -279,6 +279,24 @@ a:hover {
     font-size: large;
 }
 
+.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right] {
+    right: 0 !important;
+}
+.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left] {
+    left: 0 !important;
+}
+
+.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line] {
+    top: 1.09em !important;
+    width: 1.375em !important;
+}
+
+.swal2-x-mark {
+    left: 0 !important;
+    right: 0 !important;
+    top: -0.521em;
+}
+
 .dateCounter {
     font-size: 20px;
     color: lime;

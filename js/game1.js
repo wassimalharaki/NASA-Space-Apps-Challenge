@@ -203,7 +203,7 @@ function checkGuess() {
                 toast: true,
                 position: 'top-end',
                 showConfirmButton: false,
-                timer: 1000000,
+                timer: 3000,
                 timerProgressBar: true
             });
             Toast.fire({
