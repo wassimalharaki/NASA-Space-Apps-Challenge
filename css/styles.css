@@ -172,8 +172,9 @@ a:hover {
 }
 
 #clickme {
-    margin-bottom: -20px;
-    margin-left: 20px;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 22px;
     width: 50px;
     transform: rotate(-40deg);
     border: transparent solid 3px;
